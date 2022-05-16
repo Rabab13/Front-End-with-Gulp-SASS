@@ -1,0 +1,34 @@
+{
+  "name": "ultimate-front-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rabab",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-livereload": "^4.0.1",
+    "gulp-minify": "^3.1.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "vinyl-fs": "^0.3.0"
+  },
+  "dependencies": {
+    "@types/gulp-autoprefixer": "^0.0.33",
+    "gulp-concat": "^2.6.1",
+    "i": "^0.3.7",
+    "npm": "^8.10.0",
+    "sass": "^1.51.0",
+    "static-server": "^2.2.1"
+  },
+  "browsersList":[
+    "last 2 versions",
+    "> 2%"
+  ]
+}

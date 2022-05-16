@@ -1,0 +1,57 @@
+To force this PJT special gulp to work you need to have these versions
+Node.js  v10.16.0
+npm v6.9.0
+
+
+in order to update or downgrade node.js version 
+sudo n v NO. (sudo n 10.16.0 )
+
+after that delete node modules and install it again using 
+sudo npm i gulp@3.9.1 --save-dev
+
+If you got Error: Cannot find module 'gulp-sass' just install
+sudo npm install gulp-sass --save-dev
+
+To delete node modules
+sudo rm -rf node_modules
+
+devDependencies
+sudo npm i gulp-concat@2.6.1 --save-dev
+sudo npm i gulp-sass@4.0.2 --save-dev
+sudo npm i gulp-autoprefixer@6.1.0 --save-dev
+sudo npm i gulp-pug@4.0.1 --save-dev
+sudo npm i gulp-minify@3.1.0 --save-dev
+sudo npm i gulp-sourcemaps@2.6.5 --save-dev
+sudo npm i gulp-notify@3.2.0 --save-dev
+sudo npm i gulp-livereload@4.0.1 --save-dev
+sudo npm i sass --save-dev
+
+sudo npm i static-server
+
+create html header --> !+tap
+
+
+to create key in github repository
+$ ssh-keygen -t rsa -b 4096 -C "rababrain@gamil.com"
+
+
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/hr/.ssh/id_rsa): front-end
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in front-end
+Your public key has been saved in front-end.pub
+The key fingerprint is:
+SHA256:Kn4ALMGQiX8uWx2g/5JNpzqlIr8q8yQhvDokXgfB83E rababrain@gamil.com
+The key's randomart image is:
++---[RSA 4096]----+
+|=o.              |
+|=. +.. E         |
+| + .+.o          |
+|o =....          |
+|oo =.. .S        |
+|ooo.=.+..        |
+|=.o+oO.o         |
+|*+o.=.=          |
+|+B+oo=           |
++----[SHA256]-----+

@@ -1,0 +1,15 @@
+- var pageTitle = 'Homepage';
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        //-this is interpolation
+        title #{pageTitle} 
+        include pug/layout/style
+    body
+        .page.homepage
+            include pug/layout/sidebar
+                .content-area 
+                    h1 #{pageTitle}
