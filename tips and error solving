@@ -32,7 +32,7 @@ create html header --> !+tap
 
 
 to create key in github repository
-$ ssh-keygen -t rsa -b 4096 -C "rababrain@gamil.com"
+$ ssh-keygen -t rsa -b 4096 -C "rababrain@gmail.com"
 
 
 Generating public/private rsa key pair.
@@ -55,3 +55,9 @@ The key's randomart image is:
 |*+o.=.=          |
 |+B+oo=           |
 +----[SHA256]-----+
+hr@rabab-dell-g15-5510:~$ cd /home/hr/.ssh/
+hr@rabab-dell-g15-5510:~/.ssh$ ls
+id_rsa  id_rsa.pub  known_hosts
+hr@rabab-dell-g15-5510:~/.ssh$ cat id_rsa.pub
+hr@rabab-dell-g15-5510:~/.ssh$ ssh -T git@github.com
+Hi Rabab13/Front-End-with-Gulp-SASS! You've successfully authenticated, but GitHub does not provide shell access.

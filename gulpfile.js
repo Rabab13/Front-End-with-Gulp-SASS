@@ -3,10 +3,11 @@ var gulp = require('gulp'),
     sass = require('gulp-sass')(require('sass')),
     autoprefixer = require('gulp-autoprefixer'),
     pug = require('gulp-pug'),
+    newer = require('gulp-newer'),
     livereload = require('gulp-livereload'),
     sourcemaps = require('gulp-sourcemaps'),
-    minify = require('gulp-minify'),
-    vinylFs = require('vinyl-fs')
+    minify = require('gulp-minify');
+    
 
 
 // HTML TASK
@@ -23,6 +24,7 @@ gulp.task('css', function () {
     .pipe(sourcemaps.init()) //To load existing source maps,
     .pipe(sass({outputStyle:'compressed'}).on('error',sass.logError))
     .pipe(autoprefixer()) //load CSS3 properties --webkit/--moz
+    .pipe(newer('dist/main.css'))
     .pipe(concat('main.css')) //compressed all scss files and css files in one file
     .pipe(sourcemaps.write('.')) //To write external source map files, pass a path relative to the destination to
     .pipe(gulp.dest('dist/css'))//move all files to disruption folder
@@ -31,7 +33,9 @@ gulp.task('css', function () {
 //JS TASK
 gulp.task('js', function (){
     return gulp.src('stage/js/*.js')
+        .pipe(newer('dist/main.js'))
         .pipe(concat('main.js'))
+        .pipe(newer('dist/all.js'))
         .pipe(minify())
         .pipe(gulp.dest('dist/js'))
         .pipe(livereload())

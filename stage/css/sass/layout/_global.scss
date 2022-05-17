@@ -7,13 +7,16 @@ body{
 .page{
     min-height: 100vh;
     .content-area{
-        width: calc(100% - 250px);
+        width:calc(100% - 250px);
+        // width:100%;
         transition: 0.3s;
         min-height: 100%;
         float: right;
         will-change: width;
-        background-color: rgb(27, 109, 223);
-        margin-left: 100px;
+        &.no-sidebar {
+            width:100%;
+        }
+
         
     }
 }

@@ -4,4 +4,3 @@ $(document).ready(function() {
         $('.content-area, .sidebar').toggleClass("no-sidebar")
     });
 });
-const map = new Map();

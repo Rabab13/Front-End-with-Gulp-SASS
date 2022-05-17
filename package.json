@@ -22,12 +22,13 @@
   "dependencies": {
     "@types/gulp-autoprefixer": "^0.0.33",
     "gulp-concat": "^2.6.1",
+    "gulp-newer": "^1.4.0",
     "i": "^0.3.7",
     "npm": "^8.10.0",
     "sass": "^1.51.0",
     "static-server": "^2.2.1"
   },
-  "browsersList":[
+  "browsersList": [
     "last 2 versions",
     "> 2%"
   ]

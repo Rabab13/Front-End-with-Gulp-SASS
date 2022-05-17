@@ -6,10 +6,15 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         //-this is interpolation
-        title #{pageTitle} 
+        title #{pageTitle}
+        //-include style files into html file
         include pug/layout/style
     body
-        .page.homepage
+        .page.home-page
             include pug/layout/sidebar
-                .content-area 
+            .content-area 
+                include pug/layout/header
+                .content
                     h1 #{pageTitle}
+    //-include script files into html file
+    include pug/layout/script
