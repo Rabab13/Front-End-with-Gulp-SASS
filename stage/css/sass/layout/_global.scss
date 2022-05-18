@@ -2,18 +2,42 @@
     box-sizing: border-box;
 }
 body{
-    
+    background-color:#262b49;
+    font-family: 'DM Serif Display', serif;
+    &.DM{
+        font-family: 'DM Serif Display', serif
+    }
+    &.Abril{
+        font-family: 'Abril Fatface', cursive;
+    }
+    &.Merri{
+        font-family: 'Merriweather', serif;
+    }
+    &.Lobster{
+        font-family: 'Lobster', cursive;
+    }
+    &.Dancing{
+        font-family: 'Dancing Script', cursive;
+    }
 }
 .page{
     min-height: 100vh;
+    
     .content-area{
-        width:calc(100% - 250px);
-        // width:100%;
+        width:calc(100% - 290px);
+        margin-top: 20px;
         transition: 0.3s;
         min-height: 100%;
+        color: #fff;
         float: right;
+
         will-change: width;
         &.no-sidebar {
+            width:100%;
+            
+        }
+        .container-fluid{
+            background-color:#10153b;
             width:100%;
         }
 

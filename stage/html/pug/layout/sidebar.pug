@@ -1,1 +1,22 @@
-.sidebar Sidebar
+.sidebar
+    .logo-area.text-center 	&real;DIV
+    ul.link-area.list-unstyled
+        li: a.toggle-submenu(href="homepage.html" class= pageTitle === 'Homepage' ? "active" : "") Home 
+                i.fa.fa-arrow-circle-right
+        li
+            a.toggle-submenu(href="#") Forms
+                i.fa.fa-arrow-circle-right
+            ul.child-links.list-unstyled
+                li: a(href="#") Input
+                li: a(href="#") Textarea
+                li: a(href="#") Checkbox
+                li: a(href="#") Radio
+        li
+            a.toggle-submenu(href="#") Misc
+                i.fa.fa-arrow-circle-right
+            ul.child-links.list-unstyled
+                li: a(href="#") Loading
+                li: a(href="#") Breadcrumbs
+        li
+            a.toggle-submenu(href="charts.html" class= pageTitle === 'Charts' ? "active" : "") Charts
+                i.fa.fa-arrow-circle-right

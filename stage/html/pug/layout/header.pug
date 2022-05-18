@@ -1,2 +1,62 @@
 .header 
     i.fa.fa-exchange.fa-lg.toggle-sidebar
+    .dropdown.note-container
+        i.fa.fa-bell.fa-lg.wow.animate__swing(data-wow-duration='3s' data-wow-speed="100ms")#note(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+        ul.dropdown-menu(aria-labelledby='note')
+            li
+            a.dropdown-item(href='#')
+                .note-head Notification
+                    span 50
+                .note-content 
+                    ul.list-unstyled
+                        li
+                            i.fa.fa-envelope.fa-lg 
+                            span You got Email from Client
+                        li
+                            i.fa.fa-money.fa-lg 
+                            span You got Money from Client
+                        li
+                            i.fa.fa-thumbs-o-up.fa-lg 
+                            span You got Like from Client
+                        li
+                            i.fa.fa-message.fa-lg
+                            span You got Message from Client
+            .note-footer.text-center: a(href="#") View all notifications 
+        i.fa.fa-expand.fa-lg.toggle-fullscreen
+    .dropdown.user-container
+        .username.wow.animate__zoomIn(data-wow-duration='1s')#usermenu(data-bs-toggle='dropdown' aria-expanded='false')
+            img.avatar(src="girl.png", alt="User")
+            span.user Rabab 
+                span  &real; 
+                    span DIV
+            i.fa.fa-angle-down.fa-lg.wow.animate__swing(data-wow-duration='3s' data-wow-speed="100ms")#note(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+            .dropdown-menu.dropdown-menu-end(aria-labelledby='usermenu') 
+                h3 Rabab &real;DIV
+                p Premium member 
+                hr
+                ul.activities-list-unstyled
+                    li Added comment on post ".."
+                    li Created post on category "Programing"
+                    li Added comment on post ".."
+                    li Created post on category "Programing"
+                hr
+                .row
+                    .col 
+                        .link-box 
+                            i.fa.fa-gear.fa-lg
+                            span Settings
+                    .col 
+                        .link-box 
+                            i.fa.fa-user.fa-lg
+                            span My profile
+                    .col 
+                        .link-box
+                            i.fa.fa-power-off.fa-lg
+                            span Logout
+
+
+        
+            
+        
+        
+

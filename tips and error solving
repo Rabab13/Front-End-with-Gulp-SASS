@@ -61,3 +61,12 @@ id_rsa  id_rsa.pub  known_hosts
 hr@rabab-dell-g15-5510:~/.ssh$ cat id_rsa.pub
 hr@rabab-dell-g15-5510:~/.ssh$ ssh -T git@github.com
 Hi Rabab13/Front-End-with-Gulp-SASS! You've successfully authenticated, but GitHub does not provide shell access.
+
+
+GITHUB update repo
+$ git init
+$ git status
+$ git add .
+$ git pull origin master
+$ ctl+x
+$ git push origin master

@@ -1,0 +1,29 @@
+// You can change color with any another word in (color:#ffff3d) and same in ($map, color)
+// $map is the map of the object which we loop through it 
+//.#{$theme} this the interpolation which will print each theme name as yellow-theme or etc..
+//then we provide the interpolation the class name for each html element
+//map-get () will target what we need to target as map colors 
+
+$themes:(
+    yellow-theme:(color:#ffff3d),
+    purple-theme:(color:#6f64e6),
+    orang-theme:(color:#e85354),
+    green-theme:(color:#7fff00),
+    D-blue-theme:(color:#27225f),
+    white-theme:(color:#fff)
+);
+
+@each $theme, $map in $themes{
+    .#{$theme}{
+        .page-title , .logo-area , .fa-gear{
+            color:map-get($map, color);
+        }
+    }
+};
+@each $theme, $map in $themes{
+    .#{$theme}{
+            .setting-box{
+            background-color:map-get($map, color);
+        }
+        }
+    }
